@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page Startup - Pico.css</title>
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <style>
+    /* Sección de héroe */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: #f5f5f5;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .testimonials {
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-item {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>MiStartup</strong></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Sección Héroe -->
+    <section class="hero">
+      <h1>Impulsa tu Negocio con MiStartup</h1>
+      <p>Nuestra plataforma hace que tu empresa sea más eficiente y productiva,
+        permitiéndote enfocarte en lo que realmente importa: hacer crecer tu negocio.
+      </p>
+      <a href="#precios" role="button">Comenzar Ahora</a>
+    </section>
+
+    <!-- Características -->
+    <section id="caracteristicas">
+      <h2>Características Principales</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Fácil de Usar</h3>
+          <p>Una interfaz sencilla e intuitiva para maximizar la productividad.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Integraciones</h3>
+          <p>Conéctate fácilmente con tus herramientas favoritas.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Seguridad</h3>
+          <p>Protegemos tus datos con cifrado y autenticación avanzada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precios" style="margin: 2rem 0;">
+      <h2>Planes y Precios</h2>
+      <article>
+        <h3>Plan Básico</h3>
+        <p>$10/mes - Ideal para emprendedores que recién comienzan.</p>
+      </article>
+      <article>
+        <h3>Plan Profesional</h3>
+        <p>$20/mes - Perfecto para equipos que requieren más funcionalidades.</p>
+      </article>
+      <article>
+        <h3>Plan Enterprise</h3>
+        <p>$50/mes - Incluye soporte dedicado y características avanzadas.</p>
+      </article>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonial-item">
+        <p>
+          "Desde que empezamos a usar MiStartup, nuestras ventas se han duplicado. Es muy fácil de usar."
+        </p>
+        <small>- Marta, CEO de TiendaOnline</small>
+      </div>
+      <div class="testimonial-item">
+        <p>
+          "La integración con mis otras herramientas fue inmediata. Excelente producto."
+        </p>
+        <small>- Carlos, Fundador de StartupX</small>
+      </div>
+    </section>
+
+    <!-- CTA de contacto -->
+    <section id="contacto">
+      <h2>¿Tienes dudas? Contáctanos</h2>
+      <form action="#" method="POST">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <hr>
+    <p>© 2025 MiStartup. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

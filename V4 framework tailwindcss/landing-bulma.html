@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page - Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <strong>MiProducto</strong>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#features">Características</a>
+        <a class="navbar-item" href="#pricing">Precios</a>
+        <a class="navbar-item" href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Hero -->
+  <section class="hero is-info is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Potencia tu Negocio con MiProducto</h1>
+        <h2 class="subtitle">La mejor solución para gestionar tus operaciones de manera eficiente</h2>
+        <a href="#pricing" class="button is-primary">Comenzar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Características -->
+  <section class="section" id="features">
+    <div class="container">
+      <h3 class="title">Características</h3>
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <h4 class="subtitle">Fácil de usar</h4>
+            <p>Interfaz intuitiva para que empieces a trabajar en segundos.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h4 class="subtitle">Soporte 24/7</h4>
+            <p>Nuestro equipo está disponible todo el día para ayudarte.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h4 class="subtitle">Seguridad</h4>
+            <p>Tus datos siempre protegidos con encriptación de última generación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <h3 class="title">Planes y Precios</h3>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Básico - $10/mes</p>
+              <p>Ideal para proyectos pequeños.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Pro - $20/mes</p>
+              <p>Perfecto para crecer tu negocio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Enterprise - $50/mes</p>
+              <p>La solución completa para grandes empresas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <h3 class="title">Contacto</h3>
+      <form action="#" method="POST">
+        <div class="field">
+          <label class="label" for="nombre">Nombre</label>
+          <div class="control">
+            <input class="input" type="text" id="nombre" name="nombre" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="correo">Correo</label>
+          <div class="control">
+            <input class="input" type="email" id="correo" name="correo" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="mensaje">Mensaje</label>
+          <div class="control">
+            <textarea class="textarea" id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+        </div>
+        <div class="control">
+          <button class="button is-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2025 MiProducto. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

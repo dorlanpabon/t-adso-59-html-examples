@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda Online con Pico.css</title>
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <style>
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .cart-section {
+      margin-top: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 1rem;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: .5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Mi Tienda</strong></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Catálogo de productos -->
+    <h1>Catálogo de Productos</h1>
+    <section class="product-list">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>$10.00</p>
+        <button>Añadir al Carrito</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p>$15.50</p>
+        <button>Añadir al Carrito</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Producto 3">
+        <h3>Producto 3</h3>
+        <p>$7.99</p>
+        <button>Añadir al Carrito</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Producto 4">
+        <h3>Producto 4</h3>
+        <p>$12.00</p>
+        <button>Añadir al Carrito</button>
+      </div>
+    </section>
+
+    <!-- Sección del carrito -->
+    <section class="cart-section">
+      <h2>Carrito</h2>
+      <div class="cart-item">
+        <span>Producto 1 (x1)</span>
+        <span>$10.00</span>
+      </div>
+      <div class="cart-item">
+        <span>Producto 2 (x1)</span>
+        <span>$15.50</span>
+      </div>
+      <hr>
+      <p><strong>Total:</strong> $25.50</p>
+      <button>Finalizar Compra</button>
+    </section>
+  </main>
+
+  <footer class="container">
+    <hr>
+    <p>&copy; 2025 Mi Tienda - Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

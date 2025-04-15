@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Tailwind</title>
+  <!-- CDN de Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Barra de navegación -->
+  <nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between">
+      <a href="#" class="font-bold text-xl">Mi Dashboard</a>
+      <div>
+        <a href="#" class="mr-4 text-gray-700">Inicio</a>
+        <a href="#" class="mr-4 text-gray-700">Perfil</a>
+        <a href="#" class="text-gray-700">Salir</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <h1 class="text-2xl font-bold mb-4">Bienvenido, Usuario</h1>
+    <p class="mb-8 text-gray-700">Aquí puedes ver un resumen de tus estadísticas.</p>
+
+    <div class="grid gap-6 mb-8 md:grid-cols-3">
+      <div class="bg-white p-6 shadow rounded">
+        <h2 class="text-lg font-semibold">Ventas de Hoy</h2>
+        <p class="text-2xl font-bold mt-2">15</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded">
+        <h2 class="text-lg font-semibold">Usuarios Activos</h2>
+        <p class="text-2xl font-bold mt-2">120</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded">
+        <h2 class="text-lg font-semibold">Visitas</h2>
+        <p class="text-2xl font-bold mt-2">230</p>
+      </div>
+    </div>
+
+    <section>
+      <h2 class="text-xl font-bold mb-2">Historial de Actividad</h2>
+      <table class="min-w-full bg-white shadow rounded">
+        <thead>
+          <tr class="bg-gray-100 border-b">
+            <th class="py-2 px-4 text-left">Fecha</th>
+            <th class="py-2 px-4 text-left">Descripción</th>
+            <th class="py-2 px-4 text-left">Usuario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">14/04/2025</td>
+            <td class="py-2 px-4">Inició sesión</td>
+            <td class="py-2 px-4">jperez</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">14/04/2025</td>
+            <td class="py-2 px-4">Realizó una venta</td>
+            <td class="py-2 px-4">jperez</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-4">13/04/2025</td>
+            <td class="py-2 px-4">Actualizó su perfil</td>
+            <td class="py-2 px-4">mrios</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+
+</html>

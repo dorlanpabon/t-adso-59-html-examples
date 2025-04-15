@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Simple con Pico.css</title>
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <style>
+    main {
+      margin-top: 2rem;
+    }
+
+    .form-section {
+      margin-bottom: 2rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Panel de Administración</strong></li>
+        <li><a href="#">Usuarios</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Gestión de Usuarios</h1>
+
+    <!-- Sección para crear un usuario -->
+    <section class="form-section">
+      <h2>Crear Usuario</h2>
+      <form action="#" method="POST">
+        <label for="username">Nombre de Usuario</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Crear</button>
+      </form>
+    </section>
+
+    <!-- Tabla con usuarios existentes -->
+    <section>
+      <h2>Lista de Usuarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre de Usuario</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>jperez</td>
+            <td>jperez@example.com</td>
+            <td>
+              <button>Editar</button>
+              <button>Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>mrios</td>
+            <td>mrios@example.com</td>
+            <td>
+              <button>Editar</button>
+              <button>Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección para editar un usuario (ejemplo) -->
+    <section class="form-section" style="margin-top: 2rem;">
+      <h2>Editar Usuario</h2>
+      <form action="#" method="POST">
+        <label for="edit-user-id">ID</label>
+        <input type="text" id="edit-user-id" name="edit-user-id" value="2" readonly>
+
+        <label for="edit-username">Nombre de Usuario</label>
+        <input type="text" id="edit-username" name="edit-username" value="mrios" required>
+
+        <label for="edit-email">Correo Electrónico</label>
+        <input type="email" id="edit-email" name="edit-email" value="mrios@example.com" required>
+
+        <button type="submit">Guardar Cambios</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <hr>
+    <p>&copy; 2025 Panel de Administración. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>
