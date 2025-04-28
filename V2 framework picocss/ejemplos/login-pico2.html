@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADSO</title>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <!-- <style>
+    body {
+      font-family: 'Open Sans';
+    }
+
+    input {
+      border-radius: 5px;
+      border: 1px solid;
+      color: blue;
+    }
+
+    button {
+      color: white;
+      border: 0px;
+      border-radius: 6px;
+      padding: 5px;
+      background-color: #04324d;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      background-color: #e6e6e6;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8px;
+    }
+  </style> -->
+</head>
+
+<body>
+  <main class="container">
+    <h1>Sistema ADSO</h1>
+
+    <!-- Formulario -->
+    <form action="" method="get">
+      <div class="row">
+        <!-- Campode correo -->
+        <label for="correo">Ingresa tu correo:</label>
+        <input class="border-pink-300" type="email" placeholder="example@example.com" name="correo" id="correo">
+      </div>
+      <div class="row">
+        <!-- Campo de clave -->
+        <label for="clave">Ingresa tu clave:</label>
+        <input type="password" name="clave" id="clave" placeholder="********">
+      </div>
+      <div style="margin-bottom: 8px;">
+        <!-- Campo de recuerdame -->
+        <label for="recuerdame">Recuerdame:</label>
+        <input type="checkbox" name="recuerdame" id="recuerdame">
+      </div>
+      <div class="row">
+        <!-- <input type="button" value="Ingresar"> -->
+        <button>Ingresar</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

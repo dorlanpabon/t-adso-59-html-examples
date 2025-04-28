@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Outlet</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css">
+  <style>
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="logo">
+      <h1>Crear Usuario</h1>
+      <p>Ten en cuenta colocar un correo gmail </p>
+    </div>
+
+    <article>
+
+      <form>
+        <div class="grid">
+          
+          <label for="cc">
+            Cedula
+            <input type="number" id="cc" name="cc" placeholder="Tu cedula" required>
+          </label>
+
+          <label for="firstname">
+            Nombre
+            <input type="text" id="firstname" name="firstname" placeholder="Tu nombre" required>
+          </label>
+
+          <label for="lastname">
+            Apellido
+            <input type="text" id="lastname" name="lastname" placeholder="Tu apellido" required>
+          </label>
+        </div>
+
+        <label for="email">
+          Correo electrónico
+          <input type="email" id="email" name="email" placeholder="jpabon@gmail.com" required>
+        </label>
+
+        <label for="password">
+          Contraseña
+          <input type="password" id="password" name="password" placeholder="Contraseña segura" required>
+        </label>
+
+        <label for="confirm-password">
+          Confirmar contraseña
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Repite tu contraseña"
+            required>
+        </label>
+
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          Acepto los <a href="#">términos y condiciones</a>
+        </label>
+
+        <button type="submit">Registrarse</button>
+      </form>
+
+      <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+    </article>
+
+    <footer>
+      &copy; 2025 - Todos los derechos reservados
+    </footer>
+  </main>
+</body>
+
+</html>
